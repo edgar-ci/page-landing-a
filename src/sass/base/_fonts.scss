@@ -1,0 +1,79 @@
+// Fuentes locales a utilizar
+$path-fonts: '../fonts';
+
+@font-face {
+  font-family: 'FsJoey';
+  src: local('FS Joey Light'),
+    url('#{$path-fonts}/FsJoey/FSJoey-Light.otf') format('opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Light.eot') format('embedded-opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Light.woff') format('woff'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Light.svg') format('svg');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'FsJoey';
+  src: local('FS Joey Regular'),
+    url('#{$path-fonts}/FsJoey/FSJoey-Regular.otf') format('opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Regular.eot')
+      format('embedded-opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Regular.woff') format('woff'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Regular.svg') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'FsJoey';
+  src: local('FS Joey Medium'),
+    url('#{$path-fonts}/FsJoey/FSJoey-Medium.otf') format('opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Medium.eot')
+      format('embedded-opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Medium.woff') format('woff'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Medium.svg') format('svg');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'FsJoey';
+  src: local('FS Joey Bold'),
+    url('#{$path-fonts}/FsJoey/FSJoey-Bold.otf') format('opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Bold.eot') format('embedded-opentype'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Bold.woff') format('woff'),
+    url('#{$path-fonts}/FsJoey/FSJoeyWeb-Bold.svg') format('svg');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow-Light');
+  src: url('#{$path-fonts}/Barlow/Barlow-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow-Regular');
+  src: url('#{$path-fonts}/Barlow/Barlow-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow-Medium');
+  src: url('#{$path-fonts}/Barlow/Barlow-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow-SemiBold');
+  src: url('#{$path-fonts}/Barlow/Barlow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow-Bold');
+  src: url('#{$path-fonts}/Barlow/Barlow-Bold.ttf') format('truetype');
+  font-weight: 700;
+}

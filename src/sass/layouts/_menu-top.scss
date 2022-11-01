@@ -1,0 +1,48 @@
+.menu-top {
+  background-color: $white;
+  font-size: 1.125rem;
+
+  &__wrapper {
+    min-height: 5rem;
+  }
+
+  &__rigth {
+    text-align: right;
+    padding-right: 4rem;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    color: $text-title;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.75rem;
+    font-size: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+  }
+
+  display: none;
+
+  @include md-up {
+    display: block;
+
+    img {
+      width: 100px;
+      margin: 0 1rem 0 2.5rem;
+    }
+
+    &__title {
+      margin-left: 2.8rem;
+
+    }
+  }
+}

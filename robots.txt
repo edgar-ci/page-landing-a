@@ -1,0 +1,8 @@
+# Disallow all crawlers access to certain pages. 
+ User-agent: * 
+
+ Disallow: /assets/*
+ Disallow: /src/*
+ 
+
+ Sitemap: https://inversiones.suramexico.com/campana-sura-inversiones/sitemap.xml

@@ -1,0 +1,16 @@
+nav.menu-main
+  .container
+    .row.start-xs.middle-xs.around-md.menu-main__wrapper
+      .bg-mobil
+        a(href="/")
+          img.logo-main(src="./assets/img/logo.png")
+        button.mobile-only.menu-main__btn-close#menu-main__btn-burguer
+          span
+      ul.menu-main__wrapped#menu-main__list
+        if menu === 1
+          li.menu-main__link.active #[a(href="#") Home]
+          li.menu-main__link #[a(href="#") Company]
+          li.menu-main__link #[a(href="#") Resources]
+        li.menu-main__link #[a(href="#") Log in]
+        li.menu-main__btn-login #[a(href="#") Sign Up]
+      

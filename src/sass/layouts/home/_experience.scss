@@ -1,0 +1,119 @@
+.experience-large {
+    background-color: $bg-dark;
+    color: $white;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+
+    p {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0.1rem;
+    }
+
+    strong {
+        color: $succes;
+        font-weight: 700;
+    }
+
+    .container {
+        position: relative;
+
+    }
+
+    @include md-below {
+        font-size: 1.75rem;
+        line-height: 1.2;
+        font-weight: 400;
+        padding: 3.5rem 0 3rem;
+
+        p {
+            max-width: 268px;
+        }
+
+        strong {
+            font-size: 2rem;
+        }
+
+    }
+
+    @include md-up {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 1.2;
+        padding: 2.75rem 0 3.75rem;
+
+        p {
+            max-width: 1110px;
+        }
+
+        strong {
+            font-size: 4.25rem;
+        }
+    }
+
+}
+
+.experience-small {
+    background-color: $bg-secondary;
+    text-align: center;
+    box-sizing: border-box;
+
+    p {
+        display: block;
+        max-width: 28.75rem;
+        margin: 0 auto;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    &.empty {
+        height: 3.5rem;
+        padding: 0;
+    }
+
+    @include md-below {
+        font-size: 1.25rem;
+        padding: 1.625rem 1rem 1.875rem;
+        min-height: 4.375rem;
+        line-height: 1.2;
+
+        p {
+            max-width: 17.9rem;
+        }
+    }
+
+    @include md-up {
+        font-size: 2.5rem;
+        padding: 3rem 0 3.5rem;
+        min-height: 3.5rem;
+        line-height: 3rem;
+
+        p {
+            max-width: 28.75rem;
+        }
+
+    }
+
+}
+
+.experience-btn {
+    margin-top: 2.875rem;
+}
+
+.experience-container {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .container {
+        width: 100%;
+    }
+
+    @include md-below {
+        min-height: calc(100vh - 70px);
+    }
+}

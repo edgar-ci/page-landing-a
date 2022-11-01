@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Responsivo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-xr-copy-8" transform="translate(-280.000000, -3483.000000)">
+            <g id="Group-3" transform="translate(280.000000, 3483.000000)">
+                <polygon id="Star-Copy-35" fill="#E3E829" points="17.1679608 26.422526 7.17561149 31.6577974 8.92458643 20.2572122 1 12.0922026 12.0732752 10.2815248 17.1679608 9.23705556e-14"></polygon>
+                <path d="M17,2.25226109 L21.4266169,11.1855645 L31.1165358,12.7700389 L24.1795564,19.9174785 L25.7038978,29.8538039 L17,25.2935883 L8.29610216,29.8538039 L9.82044356,19.9174785 L2.88346424,12.7700389 L12.5733831,11.1855645 L17,2.25226109 Z" id="Star-Copy-34" stroke="#E3E829" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

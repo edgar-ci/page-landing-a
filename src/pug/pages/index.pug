@@ -1,0 +1,23 @@
+extends ../layouts/default-layout.pug
+block head
+  link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+block menu
+  - var menu =  1
+  include ../partials/menu-main.pug
+block content
+  include ../partials/home/header.pug
+  include ../partials/home/secondary-section.pug
+  include ../partials/home/purposes.pug
+  include ../partials/home/steps.pug
+  include ../partials/home/experience.pug
+  include ../partials/home/testimonies.pug
+
+block scripts
+  script(src="./assets/js/siema.min.js")
+  script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+  script(src="./assets/js/scripts.js")
+  script.
+    // Carousel de opioniones
+    main.SwipeComents();
+    // mostrar y ocultar  perfiles en responsive
+    main.ToggleProfileItems();

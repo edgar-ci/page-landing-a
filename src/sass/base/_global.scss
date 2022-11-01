@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothings: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-family: 'Barlow';
+  max-width: 100%;
+  min-width: 320px;
+}
+
+body {
+  scroll-behavior: smooth;
+  opacity: 1;
+  transition: opacity 150ms linear;
+  scroll-snap-type: both mandatory;
+
+  &::before {
+    transition: all 300ms ease-in-out;
+    content: '';
+    background-color: rgba($black, 0);
+  }
+
+  &.menu-open {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 10;
+      background-color: rgba($black, 0.5);
+
+    }
+  }
+
+
+  &.loading {
+    opacity: 0;
+  }
+
+  @include md-below {
+    padding-top: 70px;
+  }
+
+  @include md-up {
+    &.sticky {
+      padding-top: 70px;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

@@ -1,0 +1,261 @@
+.menu-main {
+  background-color: $bg-menu;
+  top: 0;
+  z-index: 10;
+
+  .logo-main {
+    height: 40px;
+  }
+
+  &__link {
+    transition: background 100ms linear;
+
+    &:hover,
+    &.active {
+      background-color: $link-hover-navbar;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $gray-200;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  &__wrapped {
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: $bg-menu;
+  }
+
+  @include md-below {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .logo-main {
+      height: 40px;
+      margin-top: 14px;
+      margin-left: 10px;
+    }
+
+    .bg-mobil {
+      height: 70px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background-color: $bg-menu;
+
+    }
+
+    &__wrapper {
+      height: 70px;
+    }
+
+    &__wrapped {
+      width: 100vw;
+      position: fixed;
+      top: 70px;
+      right: 0;
+      left: auto;
+      height: 100vh;
+      max-height: 400px;
+      max-width: 360px;
+      z-index: 100;
+      padding: 0;
+      opacity: 0;
+      transform: translate(360px, -400px);
+
+      &.open {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    &__btn-login a {
+      color: $gray-200;
+      font-weight: 800;
+      font-size: 1.1rem;
+      background: transparent;
+    }
+
+    &__link,
+    &__btn-login {
+      width: 100%;
+
+      a {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        display: block;
+      }
+    }
+
+    &__btn-close {
+      padding: 0;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+
+      &::before,
+      &::after,
+      span {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 1.25rem;
+        background: $black;
+        transition: transform 200ms ease-in-out;
+      }
+
+      span {
+        top: 0;
+        transform: rotateZ(100grad) translateX(0);
+      }
+
+      &::before {
+        top: 0;
+        transform: rotateZ(100grad) translateX(-6px);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotateZ(100grad) translateX(6px);
+      }
+
+      &.open-icon {
+        &::before {
+          width: 2px;
+          height: 1.3rem;
+          background: $bg-dark;
+          transform: rotateZ(-50grad);
+        }
+
+        span {
+          width: 2px;
+          height: 1.3rem;
+          background: $bg-dark;
+          transform: rotateZ(50grad);
+        }
+
+        &::after {
+          transform: translateX(-6px);
+          opacity: 0;
+          transition: transform 100ms ease-in-out, opacity 120ms linear;
+        }
+      }
+
+      &:focus,
+      &:hover,
+      &:active {
+        border: none;
+        background-color: transparent !important;
+        outline: none;
+      }
+    }
+  }
+
+  @include md-up {
+    .logo-main {
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    &__btn-login {
+      a {
+        display: block;
+        line-height: 1;
+        border-radius: 17px;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 11px 30px 10px;
+        transition: background 100ms linear;
+
+        &:hover {
+          color: $black;
+          background-color: $succes;
+        }
+      }
+
+      margin-right: 3rem;
+    }
+
+    &__link {
+      height: 70px;
+      display: flex;
+      align-items: center;
+
+      a {
+        padding: 25px 24px 26px;
+      }
+
+      &:nth-child(4) {
+        a {
+          max-width: 100px;
+        }
+      }
+    }
+
+    .bg-mobil {
+      position: absolute;
+      left: 2rem;
+    }
+
+    &__wrapped {
+      flex-direction: row;
+      height: 70px;
+      padding-left: 120px;
+      width: 100%;
+      transition: padding-left 150ms linear;
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &.sticky {
+      top: 0px !important;
+      position: fixed;
+      left: 0;
+      right: 0;
+
+      .bg-mobil {
+        max-width: 180px;
+      }
+
+      .logo-main {
+        opacity: 1;
+      }
+
+      .menu-main__wrapped {
+        padding-left: 150px;
+      }
+    }
+
+    &__wrapped {
+      justify-content: space-between;
+    }
+  }
+}

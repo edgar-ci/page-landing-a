@@ -1,0 +1,36 @@
+@mixin sm-only {
+    @media (max-width: $media-sm - 1px) {
+        @content;
+    }
+}
+
+
+@mixin sm-up {
+    @media (min-width: $media-sm - 1px) {
+        @content;
+    }
+}
+
+@mixin md-below {
+    @media (max-width: $media-md - 1px) {
+        @content;
+    }
+}
+
+@mixin md-only {
+    @media (min-width: $media-sm) and (max-width: $media-md) {
+        @content;
+    }
+}
+
+@mixin md-up {
+    @media (min-width: $media-md) {
+        @content;
+    }
+}
+
+@mixin lg-up {
+    @media (min-width: $media-lg) {
+        @content;
+    }
+}
